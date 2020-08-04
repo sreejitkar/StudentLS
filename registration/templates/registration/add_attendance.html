@@ -1,0 +1,20 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Attendance Student</title>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>  
+<body>
+    <div class="col-md-8">
+    <h2 class="display-3 page-header text-center">Add Attendance</h2>
+    <h4>{{class}}</h4>
+    <h4>{{subject}}</h4>
+    {% for student in students %}
+    {{student.s_name}}
+    {{stduent.s_class}}  
+    <br>
+    {% endfor %} 
+</body>
+</html>

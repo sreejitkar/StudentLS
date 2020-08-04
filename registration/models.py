@@ -16,6 +16,9 @@ class Student(models.Model):
     s_name=models.CharField(max_length=100)
     s_class=models.ForeignKey(Classroom,on_delete=models.CASCADE,default=None)
     s_sex=models.CharField(choices=SEX_CHOICES,max_length=3)
+    s_att=models.FloatField(default=0)
+    def __str__(self):
+        return str(self.s_name)
 
 class Subjects(models.Model):
     sub_id=models.AutoField(primary_key=True)

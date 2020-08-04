@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from registration.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('add_attendance/<int:class_id>/<int:sub_id>',index)
 ]
